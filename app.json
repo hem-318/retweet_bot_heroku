@@ -1,0 +1,46 @@
+{
+    "name": "Twitter retweet bot",
+    "description": "A simple python bot that searches for and retweets the tweet with certain #  keyword",
+    "keywords": [
+        "Twitter",
+        "Python",
+        "retweet",
+        "Bot"
+    ],
+    "logo": "https://heroku-blog-files.s3.amazonaws.com/posts/1473343692-python.png",
+    "repository": "https://github.com/icecrac34r/simple_retweet_bot",
+    "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python.git"
+    }
+   ],
+    "env": {
+        "consumer_key": {
+            "description": "Enter your twitter consumer key from the app"
+    },
+        "consumer_secret": {
+           "description": "Enter your twitter consumer secret key from the app"
+    },
+        "access_token": {
+           "description": "Enter your twitter access key from the app"
+    },
+        "access_token_secret": {
+           "description": "Enter your twitter api secret key from the app"
+    },
+        "search_keyword": {
+           "description": "Enter the # you need to search and retweet eg- #cryptocurrency"
+    },
+        "sleep_time": {
+           "description": "Enter the wait time between 2 tweets (in secs). eg- 3600 for 1 hour"
+    },
+        "like_tweet": {
+           "description": "True if you want to like the tweet as well (recommended = False)"
+    },
+        "follow_user": {
+           "description": "True if you want to follow all the users who tweeet about your defined keyword (recommended = False)"
+    }
+}
+
+}
+
+

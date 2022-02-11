@@ -42,9 +42,9 @@ for tweet in tweepy.Cursor(api.search_tweets, q = search_keyword).items():
 				tweet.user.follow()
 				print('Followed the user')
 		
-		
-		sleep(randint (sleep_time , sleep_time+5))
 		print("Waiting for ", sleep_time, "seconds")
+		sleep(randint (sleep_time , sleep_time+5))
+		
 			
 	except tweepy.errors.Forbidden as e:
 		print (e)

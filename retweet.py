@@ -26,7 +26,7 @@ print("Follow users :", follow_user)
 print("Keyword searching for :", search_keyword)
 print("Sleep time :", sleep_time)
 
-for tweet in tweepy.Cursor(api.search_tweets, q = search_keyword).items():
+for tweet in tweepy.Cursor(api.search_tweets, q = search_keyword, lang = 'en').items():
 	try:
 		print('\nTweet by: @' + tweet.user.screen_name)
 
